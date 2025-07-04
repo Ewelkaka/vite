@@ -1,3 +1,4 @@
-import './sub.css'
+impor   t './sub.css'
 
-export default 'sub1-name'
+export default 'sub1-name'          
+                                

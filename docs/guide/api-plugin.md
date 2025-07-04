@@ -657,3 +657,6 @@ import.meta.hot?.on('unknown:event', (payload) => {
   // The type of payload will be any
 })
 ```
+## Plugin Context           
+
+When a plugin is invoked, it receives a `PluginContext` object that contains useful information about the current plugin execution context. The `PluginContext` object has the following properties:          

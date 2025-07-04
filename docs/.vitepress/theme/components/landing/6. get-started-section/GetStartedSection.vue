@@ -121,7 +121,8 @@
 </template>
 
 <style scoped>
-.get-started-section {
+
+.get-started-section {  
   margin: 0 auto;
   padding-top: 260px;
   padding-bottom: 220px;
@@ -290,3 +291,5 @@
   }
 }
 </style>
+<script lang="ts" setup>      
+                

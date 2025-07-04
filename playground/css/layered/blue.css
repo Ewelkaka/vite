@@ -3,3 +3,14 @@
     color: blue;
   }
 }
+@media screen and (hover: hover) {
+  .layers-blue:hover {
+    color: red;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .layers-blue {
+    color: lightblue;
+  }
+}
+@media screen and (prefers-color-scheme: dark) and (hover: hover)       

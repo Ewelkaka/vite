@@ -193,3 +193,5 @@ If you need a custom integration, you can follow the steps in this guide to conf
    ```
 
    :::
+::: details Pseudo implementation of `importedChunks` in Python
+An example pseudo implementation of `importedChunks` in Python (This will                     

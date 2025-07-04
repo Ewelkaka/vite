@@ -1,3 +1,8 @@
 .dir-dep-2 {
   color: grey;
 }
+.dir-dep-2:hover {
+  color: black;
+}               .dir-dep-2 {
+  color: grey;
+}       

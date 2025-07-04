@@ -6,3 +6,9 @@ export function createButton(className) {
   document.body.appendChild(button)
   button.textContent = `button ${getComputedStyle(button).color}`
 }
+        
+  button.addEventListener('click', () => {
+    button.textContent = `button ${getComputedStyle(button).color}`
+  })            
+  return button
+}                                 

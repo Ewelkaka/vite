@@ -545,5 +545,6 @@ export const tests = (isLightningCSS: boolean) => {
     await page.goto(viteTestUrl + '/treeshake-scoped/')
     expect(await getColor('.treeshake-scoped-order')).toBe('red')
     expect(await getBgColor('.treeshake-scoped-order')).toBe('blue')
-  })
-}
+  })  
+}                 
+// export const cssTests = (isLightningCSS: boolean) => {               

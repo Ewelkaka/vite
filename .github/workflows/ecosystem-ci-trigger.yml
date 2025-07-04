@@ -1,4 +1,4 @@
-name: ecosystem-ci trigger
+  name: ecosystem-ci trigger
 
 on:
   issue_comment:
@@ -239,3 +239,4 @@ jobs:
                 suite: suite === '' ? '-' : suite
               }
             })
+            console.log(`Triggered workflow for PR #${prData.num} with suite "${suite}"`)                                                                                                                                                                       

@@ -16,3 +16,11 @@ playground-temp
 temp
 TODOs.md
 .eslintcache
+# Ignore all .tsbuildinfo files
+*.tsbuildinfo
+# Ignore all .d.ts files
+*.d.ts
+# Ignore all .d.mts files
+*.d.mts
+# Ignore all .d.cts files
+*.d.cts                                                         

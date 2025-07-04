@@ -88,3 +88,5 @@ Using `vite --profile` (and then pressing `p`) once the page loads will save a C
 ## Next Steps
 
 We decided to do a single Vite Major this year aligning with the [EOL of Node.js 16](https://endoflife.date/nodejs) in September, dropping support for both Node.js 14 and 16 in it. If you would like to get involved, we started a [Vite 5 Discussion](https://github.com/vitejs/vite/discussions/12466) to gather early feedback.
+
+  

@@ -1,3 +1,9 @@
 .aliasedModule {
   color: blue;
 }
+.aliasedModule:hover {
+  color: red;
+}
+.aliasedModule::before {
+  content: 'aliasedModule: ';
+}                   

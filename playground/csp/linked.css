@@ -1,3 +1,6 @@
 .linked {
   color: blue;
 }
+.linked:hover {
+  color: red;
+}     

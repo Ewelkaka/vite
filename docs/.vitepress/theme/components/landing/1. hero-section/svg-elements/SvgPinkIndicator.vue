@@ -246,8 +246,15 @@ defineProps({
   }
 
   &.active {
+
+
     transition: all 0.2s ease-in-out;
-    opacity: 0.8;
+    opacity:
+     0.8;
   }
+
 }
 </style>
+
+
+// This file defines the SVG elements for the pink indicator in the hero section of the landing page.           

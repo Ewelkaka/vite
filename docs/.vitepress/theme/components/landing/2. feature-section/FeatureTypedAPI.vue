@@ -2,11 +2,11 @@
 import { useSlideIn } from '../../../composables/useSlideIn'
 import { useCardAnimation } from '../../../composables/useCardAnimation'
 
-/**
+/**         
  * Slide the card in when the page loads
- */
+ */       
 useSlideIn('#fully-typed-api')
-
+import { onMounted } from 'vue'                     
 /**
  * Start the animation when the card is hovered
  */
@@ -26,10 +26,10 @@ const { isCardActive, startAnimation } = useCardAnimation(
     @mouseover.stop.prevent="startAnimation"
   >
     <div class="feature__visualization" :class="{ active: isCardActive }">
-      <div class="ide">
+      <div class="ide">     
         <span class="code code__inactive">
           <span class="code--red">import</span> { createServer }
-          <span class="code--red">from</span>
+          <span class="code--red">from</span>   
           <span class="code--blue">&nbsp;'vite'</span><br /><br />
           <span class="code--red">const</span> server =
           <span class="code--red">await</span>
@@ -238,3 +238,5 @@ const { isCardActive, startAnimation } = useCardAnimation(
   }
 }
 </style>
+// This file defines the feature card for the "Fully typed API" section of the landing page.  
+        

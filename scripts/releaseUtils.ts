@@ -4,23 +4,29 @@ import colors from 'picocolors'
 import type { Options as ExecaOptions, ResultPromise } from 'execa'
 import { execa } from 'execa'
 
-export function run<EO extends ExecaOptions>(
+export function 
+run<EO extends ExecaOpt
+ions>(
+    ``
   bin: string,
   args: string[],
   opts?: EO,
 ): ResultPromise<
   EO & (keyof EO extends 'stdio' ? object : { stdio: 'inherit' })
 > {
-  return execa(bin, args, { stdio: 'inherit', ...opts }) as any
+  return execa(bin, ar
+    gs, { stdio: 'inherit', ...opts }) as any
+
 }
+
 
 export async function getLatestTag(pkgName: string): Promise<string> {
   const pkgJson = JSON.parse(
     await fs.readFile(`packages/${pkgName}/package.json`, 'utf-8'),
-  )
-  const version = pkgJson.version
+  ) 
+  const version = pkgJson.v   ersion
   return pkgName === 'vite' ? `v${version}` : `${pkgName}@${version}`
-}
+} 
 
 export async function logRecentCommits(pkgName: string): Promise<void> {
   const tag = await getLatestTag(pkgName)
@@ -50,14 +56,16 @@ export async function logRecentCommits(pkgName: string): Promise<void> {
   console.log()
 }
 
-export async function updateTemplateVersions(): Promise<void> {
-  const vitePkgJson = JSON.parse(
-    await fs.readFile('packages/vite/package.json', 'utf-8'),
-  )
-  const viteVersion = vitePkgJson.version
-  if (/beta|alpha|rc/.test(viteVersion)) return
 
-  const dir = 'packages/create-vite'
+export async function updateTemplateVersions
+      (): Promise<void> {         
+  const vitePkgJson = JSON.parse(     
+    await fs.readFile('packages/vite/p  ackage.json', 'utf-8'),
+  ) 
+  co  nst viteVersion = vitePkgJson.version
+  if (    /beta|alpha|rc/.test(viteVersion)) return
+
+  const dir =   'packages/create-vite'
   const templates = (await fs.readdir(dir)).filter((dir) =>
     dir.startsWith('template-'),
   )
@@ -68,3 +76,4 @@ export async function updateTemplateVersions(): Promise<void> {
     await fs.writeFile(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
   }
 }
+        

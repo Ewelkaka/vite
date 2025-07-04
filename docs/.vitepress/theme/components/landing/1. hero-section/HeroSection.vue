@@ -17,11 +17,11 @@ import HeroDiagram from './HeroDiagram.vue'
 
       <!-- Heading -->
       <h1>The Build Tool<br />for the Web</h1>
-      <!-- Tagline -->
-      <h3>
+      <!-- Tagline -->    
+      <h3>      
         Vite is a blazing fast frontend build tool powering the next generation
         of web applications.
-      </h3>
+      </h3>   
 
       <!-- CTA Buttons -->
       <div class="hero__actions">
@@ -134,4 +134,7 @@ import HeroDiagram from './HeroDiagram.vue'
     margin-top: 0;
   }
 }
-</style>
+</style>  
+<style lang="scss" scoped>
+@import '../common/variables';         
+                         

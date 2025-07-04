@@ -15,7 +15,7 @@ Messages must be matched by the following regex:
 
 ```
 feat(dev): add 'comments' option
-fix(dev): fix dev error
+fix(dev): fix dev    error
 perf(build)!: remove 'foo' option
 revert: feat(compiler): add 'comments' option
 ```
@@ -32,6 +32,8 @@ The scope could be anything specifying the place of the commit change. For examp
 
 The subject contains a succinct description of the change:
 
-- use the imperative, present tense: "change" not "changed" nor "changes"
-- don't capitalize the first letter
-- no dot (.) at the end
+- use the imperative, present tense: "change" not "changed" nor "changes"       
+- don't capitalize the first letter     
+- no dot (.) at the end         
+### Body    
+The body contains a more detailed description of the change, including the reasoning behind it and any relevant context. It should be wrapped in triple quotes (""") and can include multiple paragraphs if needed.     

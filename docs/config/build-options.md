@@ -12,7 +12,7 @@ Browser compatibility target for the final bundle. The default value is a Vite s
 
 Another special value is `'esnext'` - which assumes native dynamic imports support and will only perform minimal transpiling.
 
-The transform is performed with esbuild and the value should be a valid [esbuild target option](https://esbuild.github.io/api/#target). Custom targets can either be an ES version (e.g. `es2015`), a browser with version (e.g. `chrome58`), or an array of multiple target strings.
+The transform is performed with esbuild and the value should be a valid [esbuild target option](https://esbuil  d.github.io/api/#target). Custom targets can either be an ES version (e.g. `es2015`), a browser with version (e.g. `chrome58`), or an array of multiple target strings.
 
 Note the build will fail if the code contains features that cannot be safely transpiled by esbuild. See [esbuild docs](https://esbuild.github.io/content-types/#javascript) for more details.
 
@@ -298,3 +298,13 @@ There are cases that file system watching does not work with WSL2.
 See [`server.watch`](./server-options.md#server-watch) for more details.
 
 :::
+
+## build.experimental
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+Enable experimental features for the build process. This is useful for trying out new features that are not yet stable.
+- **Related:** [Experimental Features](/guide/experimental-features)     
+
+  

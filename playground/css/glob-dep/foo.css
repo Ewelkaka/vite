@@ -1,3 +1,6 @@
 .dir-dep {
   color: grey;
 }
+.dir-dep:hover {
+  color: black;
+}       

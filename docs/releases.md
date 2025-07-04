@@ -59,3 +59,12 @@ We periodically deprecate features that have been superseded by better alternati
 ## Experimental Features
 
 Some features are marked as experimental when released in a stable version of Vite. Experimental features allow us to gather real-world experience to influence their final design. The goal is to let users provide feedback by testing them in production. Experimental features themselves are considered unstable, and should only be used in a controlled manner. These features may change between Minors, so users must pin their Vite version when they rely on them. We will create [a GitHub discussion](https://github.com/vitejs/vite/discussions/categories/feedback?discussions_q=is%3Aopen+label%3Aexperimental+category%3AFeedback) for each experimental feature.
+export async function updatePackageVersions(
+  pkgName: string,
+  version: string,
+): Promise<void> {
+  const pkgPath = `packages/${pkgName}/package.json`
+  const pkg = JSON                                                                                                                                                                              
+    .parse(await fs.readFile(pkgPath, 'utf-8'))
+  pkg.version = version
+  await fs.writeFile(pkgPath, JSON.stringify(pkg, null, 2) + '\n')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

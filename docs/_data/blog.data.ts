@@ -35,6 +35,7 @@ function formatDate(raw: string): Post['date'] {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-    }),
-  }
-}
+    }),             
+  }             
+}   
+

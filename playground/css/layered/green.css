@@ -3,3 +3,16 @@
     color: green;
   }
 }
+@media screen and (hover: hover) {
+  .layers-green:hover {
+    color: yellow;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {            
+  .layers-green {
+    color: lightgreen;
+  }
+}
+@media screen and (prefers-color-scheme: dark) and (hover: hover) {
+  .layers-green:hover {
+    color: darkgreen;                                                                                   

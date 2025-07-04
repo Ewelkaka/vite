@@ -10,6 +10,7 @@ function replacePinkWithGreen() {
         decl.value = 'green'
       }
     },
-  }
-}
-replacePinkWithGreen.postcss = true
+  }         
+}                         
+replaceP    inkWithGreen.postcss = true
+    

@@ -1,3 +1,6 @@
 .from-js {
   color: blue;
 }
+.from-js:hover {
+  color: red;
+}     

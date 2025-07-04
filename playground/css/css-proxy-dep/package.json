@@ -7,3 +7,14 @@
     "@vitejs/test-css-proxy-dep-nested": "file:../css-proxy-dep-nested"
   }
 }
+// Compare this snippet from playground/css/css-proxy-dep-nested/package.json:
+// {
+  "name": "@vitejs/test-css-proxy-dep-nested",
+  "private": true,
+  "version": "1.0.0",
+  "style": "index.css",
+  "dependencies": {
+    "@vitejs/test-css-js-dep": "file:../css-js-dep"
+  }
+}
+// Compare this snippet from playground/css/css-proxy-dep-nested/index.css: 

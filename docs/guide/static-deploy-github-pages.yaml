@@ -54,3 +54,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 #endregion content
+# This workflow deploys the static content in the `dist` directory to GitHub Pages whenever there is a push to the `main` branch or when manually triggered.        

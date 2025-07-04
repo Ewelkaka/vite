@@ -28,5 +28,6 @@ export const App = component$(() => {
         Click on the Vite and Qwik logos to learn more
       </p>
     </>
-  )
-})
+  ) 
+})    
+// This file is used to define the main application component for a Qwik project using Vite.                  

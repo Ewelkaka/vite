@@ -104,4 +104,5 @@ export function useCardAnimation(
     startAnimation,
     isCardActive,
   }
-}
+} 
+

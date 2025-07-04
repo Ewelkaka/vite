@@ -27,3 +27,10 @@ jobs:
         npm install
         gulp
 nmp run build
+    - name: Run Tests
+      run: |
+        npm test
+        # Add any additional test commands here
+      env:
+        NODE_ENV: test
+        CI: true                            

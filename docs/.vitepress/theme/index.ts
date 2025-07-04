@@ -23,3 +23,4 @@ export default {
     app.use(TwoslashFloatingVue)
   },
 } satisfies Theme
+      

@@ -36,3 +36,13 @@ jobs:
         run: pnpm build
 
       - run: pnpm dlx pkg-pr-new@0.0 publish --compact --pnpm ./packages/vite
+      - name: Create preview release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: 'preview-${{ github.sha }}'
+          name: 'Preview Release ${{ github.sha }}'
+          files: |    
+            packages/vite/dist/vite-*.tgz 
+        env:      
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 

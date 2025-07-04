@@ -6,3 +6,93 @@
   "style": "index.css",
   "sass": "index.scss"
 }
+{
+  "type": "module",
+  "scripts": {
+    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.32.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0"
+  }
+}
+{
+  "name": "@vitejs/test-css-dep",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.0"
+  }
+}
+{
+  "name": "@vitejs/test-css-dep",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0"
+  }
+}
+{
+  "name": "@vitejs/test-css-dep",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.0"
+  }
+}
+{
+  "name": "@vitejs/test-css-dep",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0"
+  }
+}
+{
+  "name": "@vitejs/test-css-dep",
+  "private": true,      

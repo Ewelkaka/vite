@@ -16,4 +16,14 @@ for (let i = 0; i < 5; i++) {
       )
     })
   })
-}
+}   
+describe.runIf(!isBuild)('css files has same basename', () => {
+  test('emit file name should consistent', () => {
+    expect(findAssetFile('sub.css', 'same-file-name', '.')).toMatch(
+      'sub1-sub',
+    )
+    expect(findAssetFile('sub2.css', 'same-file-name', '.')).toMatch(
+      'sub2-sub',
+    )
+  })
+})                    

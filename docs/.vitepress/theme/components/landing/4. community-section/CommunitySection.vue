@@ -31,8 +31,8 @@ SolidJS in mind, they should scale from our simplest template to opinionated sta
     ],
   },
   {
-    name: 'Mark Dalgleish',
-    handle: '@markdalgleish',
+        name: 'Mark Dalgleish',
+        handle: '@markdalgleish',
     avatar:
       'https://pbs.twimg.com/profile_images/754886061872979968/BzaOWhs1_400x400.jpg',
     comment: [
@@ -45,10 +45,10 @@ SolidJS in mind, they should scale from our simplest template to opinionated sta
     handle: '@_developit',
     avatar:
       'https://pbs.twimg.com/profile_images/1374778373239681025/Sc9ehtAr_400x400.jpg',
-    comment: [
+    comment: [      
       `Every time I suspect I've hit the bounds of what Vite can do, I end up being wrong.`,
     ],
-  },
+  },  
   {
     name: 'David Cramer',
     handle: '@zeeg',
@@ -127,11 +127,13 @@ SolidJS in mind, they should scale from our simplest template to opinionated sta
     text-align: center;
   }
 
+
   .community-grid-container {
     position: relative;
   }
 
   .community-grid {
+
     column-count: 2;
     column-gap: 25px;
     width: calc(100% - 50px);
@@ -144,3 +146,5 @@ SolidJS in mind, they should scale from our simplest template to opinionated sta
   }
 }
 </style>
+<style scoped>   
+ 

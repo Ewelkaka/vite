@@ -3,3 +3,6 @@
   background: url(spacefolder/ok.png);
   background-position: center;
 }
+.import-with-space:hover {
+  color: blue;
+}             

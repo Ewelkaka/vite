@@ -1,14 +1,14 @@
-<script setup lang="ts">
+    <script setup lang="ts">
 defineProps({
   active: {
-    type: Boolean,
+    type: Boolean,  
     required: true,
     default: false,
   },
-})
+})      
 </script>
 
-<template>
+<template>  
   <svg
     width="142"
     height="82"
@@ -238,5 +238,7 @@ defineProps({
     transition: all 0.2s ease-in-out;
     opacity: 0.8;
   }
-}
+}     
 </style>
+</style>    
+                

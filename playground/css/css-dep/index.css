@@ -1,3 +1,6 @@
 .css-dep {
   color: purple;
 }
+.css-dep:hover {
+  color: orange;
+}       

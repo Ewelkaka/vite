@@ -501,5 +501,13 @@ In addition, Vite is highly extensible via its [Plugin API](https://vite.dev/gui
       ],
     },
   },
+
   buildEnd,
+
 })
+// This configuration sets up VitePress for the Vite documentation site, including navigation, sidebar, plugins, and markdown transformations. It also configures social links, Algolia search, and footer information. The site is optimized for performance and includes features like code highlighting and custom icons.
+                      // The `buildEnd` function g
+                      // 
+                      // enerate
+                      // 
+                      // s an RSS feed for the blog posts, and the `llmstxt` plugin provides a description and details about Vite for use in AI tools. The `llmstxt` plugin enhances the documentation by offering a concise summary and key points, making it easier for users to understand Vite's capabilities at a glance.              

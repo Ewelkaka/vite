@@ -25,3 +25,4 @@ jobs:
             doesn't start with an uppercase character.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check for breaking changes                                                              

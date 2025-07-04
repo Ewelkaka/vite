@@ -125,3 +125,6 @@ const props = withDefaults(defineProps<Props>(), {
   }
 }
 </style>
+<style lang="scss" scoped>
+@import '../common/variables';
+@import '../common/mixins';     

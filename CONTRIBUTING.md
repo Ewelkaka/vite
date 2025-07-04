@@ -359,3 +359,5 @@ If you have publish access, the steps below explain how to cut a release for a p
 3. Click on the "Review deployments" button in the yellow box, a popup will appear.
 4. Check "Release" and click "Approve and deploy".
 5. The package will start publishing to npm.
+6. Once the workflow finishes, you can check the package on npm to verify it was published correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                    

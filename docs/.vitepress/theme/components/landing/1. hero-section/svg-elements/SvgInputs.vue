@@ -62,4 +62,8 @@ defineProps({
     }
   }
 }
-</style>
+</style>          
+//
+
+ This file defines the SVG elements for the i   nput lines in the hero section of the landing page.    
+         

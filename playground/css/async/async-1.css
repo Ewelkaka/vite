@@ -1,3 +1,15 @@
 .async-blue {
   color: blue;
 }
+.async-blue:hover {
+  color: red;
+}
+.async-blue::before {
+  content: 'async: ';
+}
+.async-blue::after {  
+  content: 'async: ';
+}
+.async-blue::first-letter {
+  color: green;
+}                     

@@ -19,3 +19,28 @@ The `server.ssrLoadModule(url)` only allows importing modules in the `ssr` e
 ## Migration Guide
 
 Check out the [Environment API for Frameworks Guide](../guide/api-environment-frameworks.md).
+```js twoslash [vite.config.js]
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  server: {
+    ssrLoadModule(url) {
+      // Custom SSR module loading
+    }
+  }
+})
+``` 
+```js twoslash [vite.config.js]
+import { defineConfig } from 'vite'
+import { ModuleRunner } from 'vite'
+
+export default defineConfig({
+  server: {
+    ssrLoadModule(url) {
+      const runner = new ModuleRunner()
+      return runner.import(url)
+    }
+  }
+})
+```        
+  

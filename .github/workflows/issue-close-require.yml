@@ -19,3 +19,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           labels: "needs reproduction"
           inactive-day: 3
+          close-message: "This issue has been closed due to inactivity. If you still need help, please open a new issue with the necessary details."              

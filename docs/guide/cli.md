@@ -130,3 +130,4 @@ vite preview [root]
 | `-f, --filter <filter>`   | Filter debug logs (`string`)                                                                                           |
 | `-m, --mode <mode>`       | Set env mode (`string`)                                                                                                |
 | `-h, --help`              | Display available CLI options                                                                                          |
+### `vite inspect`                                                              

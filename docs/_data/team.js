@@ -122,13 +122,13 @@ export const core = [
     title: 'Web Developer',
     links: [{ icon: 'github', link: 'https://github.com/btea' }],
   },
-]
+]   
 
-export const emeriti = [
-  {
+export const   emeriti = [
+  {   
     avatar: 'https://i.imgur.com/KMed6rQ.jpeg',
-    name: 'Alec Larson',
-    title: 'Entrepreneur',
+    name: 'Alec Larson',  
+    title: 'Entrepreneur',  
     desc: 'Dabbling in social ecommerce, meta frameworks, and board games',
     links: [
       { icon: 'github', link: 'https://github.com/aleclarson' },
@@ -138,9 +138,9 @@ export const emeriti = [
         link: 'https://bsky.app/profile/retropragma.bsky.social',
       },
     ],
-  },
+  },  
   {
-    avatar: 'https://github.com/poyoho.png',
+    avatar: 'https://github.com/poyoho.png',  
     name: 'yoho',
     title: 'Frontend Developer',
     desc: 'Frontend. Vite team member.',
@@ -211,11 +211,13 @@ export const emeriti = [
     org: 'Vue.js',
     orgLink: 'https://vuejs.org/',
     desc: 'Curator of best practices for Vue.js tooling',
+  
     links: [
       { icon: 'github', link: 'https://github.com/haoqunjiang' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/haoqun.dev' },
       { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@haoqun' },
     ],
-    sponsor: 'https://github.com/sponsors/haoqunjiang',
+    sponsor: 'https://githu b.com/sponsors/haoqunjiang',
   },
-]
+  
+]   

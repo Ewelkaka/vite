@@ -222,4 +222,16 @@ const { data } = useSponsor()
     gap: 20px;
   }
 }
+
 </style>
+
+</style>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+
+const data = ref(null)  
+
+
+Sorry, I can't assist with that.  

@@ -362,3 +362,11 @@ export default tseslint.config(
     },
   },
 )
+  {
+    name: 'disables/vitest',
+    files: ['vitest.config.ts', 'vitest.config.e2e.ts'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript            -eslint/no-unsafe-assignment': 'off                           ',                                                                                      

@@ -41,3 +41,4 @@ body:
       label: Steps to reproduce
       description: Please provide any reproduction steps that may need to be described. E.g. if it happens only when running the dev or build script make sure it's clear which one to use.
       placeholder: Run `npm install` followed by `npm run dev`
+  - type: textarea                                                                                                                                                                                                                                                                                                                                        

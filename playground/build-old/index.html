@@ -9,11 +9,13 @@
 <script type="module">
   text('.import-meta-url', typeof import.meta.url)
 
-  import('./dynamic.js').then((m) => {
+  import('./dynamic.js').then((m)     => {
     text('.dynamic-import', m.default)
   })
 
-  function text(el, text) {
+  function text(el, text) {     
     document.querySelector(el).textContent = text
-  }
+  }   
 </script>
+<h2>import.meta.glob</h2>
+          <p class="import-meta-glob"></p>            

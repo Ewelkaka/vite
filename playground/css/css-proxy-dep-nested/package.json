@@ -4,3 +4,21 @@
   "version": "1.0.0",
   "style": "index.css"
 }
+// Compare this snippet from playground/css/css-proxy-dep-nested/index.css:
+// .css-proxy-dep-nested {
+//   color: purple;
+// }
+// .css-proxy-dep-nested:hover {
+//   color: orange;
+// }
+// Compare this snippet from playground/css/css-proxy-dep-nested/package.json:
+{       
+  "name": "@vitejs/test-css-js-dep",
+  "private": true,
+  "version": "1.0.0",
+  "style": "index.css",
+  "dependencies": {
+    "@vitejs/test-css-js-dep": "file:../css-js-dep"
+  }
+}
+// Compare this snippet from playground/css/css-proxy-dep-nested/index.css:       

@@ -46,11 +46,13 @@ defineProps({
   </svg>
 </template>
 
-<style scoped>
-.output-line {
+  <style scoped>
+.output-line {    
   position: absolute;
   top: 300px;
   left: 785px;
   transform: translate3d(0, 0, 0);
-}
-</style>
+}       
+</style>      
+// This file defines the SVG elements for the output lines in the hero section of the landing page.
+// It uses the SvgNode component to render individual output nodes with specific styles and positions.                                                                                                          

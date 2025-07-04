@@ -60,7 +60,8 @@ onUnmounted(() => {
 
 <template>
   <div
-    id="instant-server-start-card"
+    id="instant-server-s
+    art-card"
     class="feature-card"
     @mouseover.stop.prevent="startAnimation"
   >
@@ -410,9 +411,13 @@ onUnmounted(() => {
   }
 }
 
-@keyframes cursor-blink {
+@keyframes 
+
+cursor-blink {
+
   0% {
     border-color: transparent;
+
   }
   49% {
     border-color: transparent;
@@ -422,6 +427,14 @@ onUnmounted(() => {
   }
   100% {
     border-color: #ffffff;
+
   }
 }
+
 </style>
+
+<style lang="scss" scoped>
+
+@import '../common/variables';
+@import '../common/mixins';    
+                                                                                                                     

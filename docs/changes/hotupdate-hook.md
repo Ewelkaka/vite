@@ -120,3 +120,21 @@ hotUpdate() {
   return []
 }
 ```
+## Example
+```ts
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  plugins: [
+    {
+      name: 'example-plugin',
+      handleHotUpdate({ modules }) {
+        // Custom HMR handling
+        return modules.filter(mod => mod.file.endsWith('.vue'))
+      }
+    }
+  ]
+})  
+
+```    
+                       

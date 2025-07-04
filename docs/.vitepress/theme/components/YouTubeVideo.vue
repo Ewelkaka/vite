@@ -25,7 +25,7 @@ defineProps({
   height: 0;
 }
 
-.full-width-youtube-video iframe {
+.full-width-youtube-video   iframe {      
   position: absolute;
   top: 0;
   left: 0;
@@ -35,3 +35,4 @@ defineProps({
   border-radius: 0.5rem;
 }
 </style>
+      

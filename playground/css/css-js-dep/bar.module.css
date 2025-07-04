@@ -1,3 +1,14 @@
 .cssJsDepModule {
   color: green;
 }
+.cssJsDepModule:hover {
+  color: blue;
+}
+.cssJsDepModule::before {
+  content: 'css-js-dep: ';
+}
+.cssJsDepModule::after {
+  content: 'css-js-dep: ';
+}
+.cssJsDepModule::first-letter {
+  color: red;       

@@ -65,3 +65,8 @@ export default defineConfig({
     },
   ],
 })
+// This Vite configuration file sets up a custom server with nonce-based Content Security Policy (CSP) headers.
+// It defines a nonce for each request, which is used to allow inline scripts and styles in     the HTML.
+// The `createMiddleware` function reads an HTML file and injects the nonce into the CSP header and any inline scripts or styles.
+// The `defineConfig` function from Vite is used to create the configuration object.
+// The `plugins` array includes a custom plugin that handles the nonce injection and                            

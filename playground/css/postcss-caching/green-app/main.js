@@ -4,4 +4,5 @@ text('.imported-css', css)
 
 function text(el, text) {
   document.querySelector(el).textContent = text
-}
+}   
+  

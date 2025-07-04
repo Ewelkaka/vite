@@ -86,3 +86,22 @@ Resolved dependency requests are strongly cached with HTTP headers `max-age=3153
 1. Temporarily disable cache via the Network tab of your browser devtools.
 2. Restart Vite dev server with the `--force` flag to re-bundle the deps.
 3. Reload the page.
+
+## Debugging Pre-Bundling
+
+To debug pre-bundling issues, you can enable verbose logging by setting the `DEBUG` environment variable:
+
+```bash
+DEBUG=vite:* vite
+```
+
+This will output detailed logs about the dependency resolution and bundling process, helping you identify any issues.
+
+You can also use the `vite inspect` command to analyze the dependency graph and see how Vite is resolving your imports:
+
+```bash
+vite inspect
+```
+
+This will generate a visual representation of the dependency graph, allowing you to easily spot any potential issues.           
+                                                            ```                       

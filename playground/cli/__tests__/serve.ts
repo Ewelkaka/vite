@@ -158,3 +158,11 @@ async function resolvedOrTimeout(promise, ms, errorMessage) {
     timer = null
   })
 }
+// helper to kill port, used in the beginning and at the end of the serve
+async function kill(port) {
+  try {
+    await execaCommand(`kill-port ${port}`)
+  } catch (e) {
+    console.error(`error while killing port ${port}:`, e)
+  }
+}   

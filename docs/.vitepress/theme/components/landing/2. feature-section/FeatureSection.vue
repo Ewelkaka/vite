@@ -316,4 +316,7 @@ const startAnimation = () => {
     }
   }
 }
-</style>
+</style>        
+
+// This file defines the feature section of the landing page, including the title, description, and grid for feature cards.       
+                                                                                                          

@@ -32,4 +32,5 @@ jobs:
         # Add any additional test commands here
       env:
         NODE_ENV: test
-        CI: true                                
+        CI: true  
+                                                  

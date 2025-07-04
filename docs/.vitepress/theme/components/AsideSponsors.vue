@@ -86,3 +86,4 @@ const sponsors = computed(() => {
   opacity: 0.9;
 }
 </style>
+<style lang="scss" scoped>  

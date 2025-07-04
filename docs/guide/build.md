@@ -9,15 +9,15 @@ By default, the production bundle assumes a modern browser that is included in t
 <!-- Search for the `ESBUILD_BASELINE_WIDELY_AVAILABLE_TARGET` constant for more information -->
 
 - Chrome >=107
-- Edge >=107
+- Edge >=107    
 - Firefox >=104
-- Safari >=16
+- Safari >=16 
 
-You can specify custom targets via the [`build.target` config option](/config/build-options.md#build-target), where the lowest target is `es2015`. If a lower target is set, Vite will still require these minimum browser support ranges as it relies on [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import), and [`import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta):
+You can specify custom targets via the [`build.target` config option](/config/build-options.md#build-t      arget), where the lowest target is `es2015`. If a lower target is set, Vite will still require these minimum browser support ranges as it relies on [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import), and [`import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta):
 
-<!-- Search for the `defaultEsbuildSupported` constant for more information -->
+<!-- Search for the `defaultEsbuildSupported` constant for more information -->   
 
-- Chrome >=64
+- Chrome >=64 
 - Firefox >=67
 - Safari >=11.1
 - Edge >=79
@@ -30,8 +30,8 @@ Legacy browsers can be supported via [@vitejs/plugin-legacy](https://github.com/
 
 - Related: [Asset Handling](./assets)
 
-If you are deploying your project under a nested public path, simply specify the [`base` config option](/config/shared-options.md#base) and all asset paths will be rewritten accordingly. This option can also be specified as a command line flag, e.g. `vite build --base=/my/public/path/`.
-
+If you are deploying your project under a nested public path, simply specify the [`base` config option](/config/shared-options.md#base) and all asset paths will be rewritten accordingly. This option can also be specified as a command line flag, e.g. `vite build --base=/my/public/path/`.               
+This is useful for deploying to a subdirectory on a static file server, or when using a CDN.                      
 JS-imported asset URLs, CSS `url()` references, and asset references in your `.html` files are all automatically adjusted to respect this option during build.
 
 The exception is when you need to dynamically concatenate URLs on the fly. In this case, you can use the globally injected `import.meta.env.BASE_URL` variable which will be the public base path. Note this variable is statically replaced during build so it must appear exactly as-is (i.e. `import.meta.env['BASE_URL']` won't work).
@@ -39,29 +39,41 @@ The exception is when you need to dynamically concatenate URLs on the fly. In th
 For advanced base path control, check out [Advanced Base Options](#advanced-base-options).
 
 ### Relative base
-
-If you don't know the base path in advance, you may set a relative base path with `"base": "./"` or `"base": ""`. This will make all generated URLs to be relative to each file.
-
-:::warning Support for older browsers when using relative bases
-
-`import.meta` support is required for relative bases. If you need to support [browsers that do not support `import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta), you can use [the `legacy` plugin](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy).
-
-:::
-
-## Customizing the Build
-
-The build can be customized via various [build config options](/config/build-options.md). Specifically, you can directly adjust the underlying [Rollup options](https://rollupjs.org/configuration-options/) via `build.rollupOptions`:
+If you are deploying your project to a static file server that serves files from the same directory as the `index.html`, you can set the `base` option to an empty string or `"./"`:
 
 ```js [vite.config.js]
 export default defineConfig({
-  build: {
+  base: './',
+})
+```
+This will generate all asset URLs relative to each file, which is useful for static file servers that do not support nested paths.                          
+If you don't know the base path in advance, you may set a relative base path with `"base": "./"` or `"base": ""`. This will make all generated URLs to be relative to each file.                    
+
+:::warning Support for older browsers when using relative bases     
+If you use a relative base path, you must ensure that your target browsers support `import.meta` as it is used to resolve the base URL at runtime.              
+                                  `import.meta` support is required for relative bases. If you need to support [browsers that do not support `import.meta`](https://caniuse.com/mdn-javascript_operators_import_meta), you can use [the `legacy` plugin](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy).
+
+:::
+```js [vite.config.js]
+export default defineConfig({     
+  base: './',
+})
+```           
+## Customizing the Build
+To customize the build process, you can use the `vite.config.js` file in your project root. This file allows you to configure various aspects of the build process, such as output directory, asset handling, and more.
+The default output directory is `<root>/dist`, but you can change it via the [`build                
+The build can be customized via various [build config options](/config/build-options.md). Specifically, you can directly adjust the underlying [Rollup options](https://rollupjs.org/configuration-options/) via `build.rollupOptions`:                   
+
+```js [vite.config.js]                                                            
+export default defineConfig({
+  build: {      
     rollupOptions: {
       // https://rollupjs.org/configuration-options/
-    },
+    },              
   },
 })
 ```
-
+## Advanced Base Options                            
 For example, you can specify multiple Rollup outputs with plugins that are only applied during build.
 
 ## Chunking Strategy

@@ -83,4 +83,4 @@
 // The configuration is designed to ensure that the project remains up-to-date with its dependencies while avoiding unnecessary updates and conflicts.
 // The `ignorePaths` field specifies paths that Renovate should ignore, such as test directories.
 // The `packageRules` field defines specific rules for handling dependencies, such as disabling updates for peer dependencies and grouping related
-Sorry, I can't assist with that.  
+Sorry, I can't assist with that.      

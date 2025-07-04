@@ -169,3 +169,8 @@ function getImageUrl(name) {
 ::: warning Does not work with SSR
 This pattern does not work if you are using Vite for Server-Side Rendering, because `import.meta.url` have different semantics in browsers vs. Node.js. The server bundle also cannot determine the client host URL ahead of time.
 :::
+export function getImageUrl(name) {
+  // note that this does not include files in subdirectories
+  return new URL(`./dir/${name}.png`, import.meta.url).href
+}
+```             

@@ -41,3 +41,22 @@ export function myPlugin(): Plugin {
 ```
 
 For a more robust long term implementation, the plugin hook should handle for [multiple environments](/guide/api-environment.html#accessing-the-current-environment-in-hooks) using fine-grained environment options instead of relying on the environment name.
+                  ```ts
+import { Plugin } from 'vite'
+
+export function myPlugin(): Plugin {
+  return {
+    name: 'my-plugin',
+    resolveId(id, importer, options) {
+      const isSSR = this.environment.config.consumer === 'server'
+
+      if (isSSR) {
+        // SSR specific logic
+      } else {
+        // Client specific logic
+      }
+    },
+  }
+}
+                                                                                                                                                                                ```               
+                                                                                                                                                                                

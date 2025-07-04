@@ -114,3 +114,5 @@ Optimizing dependencies during build time was an **experimental** feature. Proje
 - **Type:** `string[]`
 
 Forces ESM interop when importing these dependencies. Vite is able to properly detect when a dependency needs interop, so this option isn't generally needed. However, different combinations of dependencies could cause some of them to be prebundled differently. Adding these packages to `needsInterop` can speed up cold start by avoiding full-page reloads. You'll receive a warning if this is the case for one of your dependencies, suggesting to add the package name to this array in your config.
+
+  

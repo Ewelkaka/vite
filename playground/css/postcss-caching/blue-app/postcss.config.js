@@ -2,14 +2,15 @@ export default {
   plugins: [replacePinkWithBlue],
 }
 
-function replacePinkWithBlue() {
-  return {
+function     replacePinkWithBlue() {
+  return {  
     postcssPlugin: 'replace-pink-with-blue',
-    Declaration(decl) {
+          Declaration(decl) {
       if (decl.value === 'pink') {
-        decl.value = 'blue'
-      }
+           decl.value = 'blue'
+      }           
     },
-  }
-}
+  } 
+}           
 replacePinkWithBlue.postcss = true
+      

@@ -132,4 +132,5 @@ function mapImgPath(sponsors: Sponsor[]) {
       ...sponsor,
       img: `${dataHost}/images/${sponsor.img}`,
     }))
-}
+} 
+        

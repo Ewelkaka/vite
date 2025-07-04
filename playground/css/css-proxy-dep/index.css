@@ -1,1 +1,5 @@
 @import '@vitejs/test-css-proxy-dep-nested';
+@import './css-js-dep/foo.css';
+@import './css-js-dep/bar.module.css';
+@import './css-dep-exports/style.css';
+@import './css-dep-exports/style.scss';                 

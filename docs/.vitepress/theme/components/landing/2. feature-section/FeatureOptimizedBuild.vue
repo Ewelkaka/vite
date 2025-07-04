@@ -6,18 +6,21 @@ import { useSlideIn } from '../../../composables/useSlideIn'
 import { useCardAnimation } from '../../../composables/useCardAnimation'
 
 // Animation state
-const isBoltActive: Ref<boolean> = ref(false)
-const nodes = Array.from({ length: 10 }, () => {
+
+const 
+
+const nodes = Array.from({ length: 10 }, () => {        
   return {
     position: ref(0),
-    visible: ref(false),
+    visible: ref(false),        
   }
-})
+})    
 
 /**
  * Slide the card in when the page loads
- */
-useSlideIn('#optimized-build-card')
+ */ 
+useSlideIn('#optimized-build-card') 
+
 
 /**
  * Start the animation when the card is hovered
@@ -588,7 +591,8 @@ const { startAnimation } = useCardAnimation(
   }
 }
 
-@keyframes bolt-color-entrance {
+@keyframes 
+bolt-color-entrance {
   0% {
     opacity: 0.03;
   }
@@ -617,7 +621,11 @@ const { startAnimation } = useCardAnimation(
     opacity: 0.5;
   }
   100% {
+    
     opacity: 0.9;
   }
+
 }
 </style>
+<style lang="scss" scoped>                                          
+

@@ -22,7 +22,7 @@ export const buildEnd = async (config: SiteConfig): Promise<void> => {
   const posts = await createContentLoader('blog/*.md', {
     excerpt: true,
     render: true,
-  }).load()
+  }).load() 
 
   posts.sort(
     (a, b) =>
@@ -48,3 +48,13 @@ export const buildEnd = async (config: SiteConfig): Promise<void> => {
 
   writeFileSync(path.join(config.outDir, 'blog.rss'), feed.rss2())
 }
+export const data = {
+  title: 'Vite',
+  description: 'Next Generation Frontend Tooling',
+  url: siteUrl,
+  ogImage: 'https://vite.dev/og-image.png',
+  twitterImage: 'https://vite.dev/og-image.png',
+  twitterCard: 'summary_large_image',
+  feedUrl: `${siteUrl}/blog.rss`,
+}                   
+  

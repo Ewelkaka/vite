@@ -501,3 +501,5 @@ const { startAnimation, isCardActive } = useCardAnimation(
   }
 }
 </style>
+<style lang="scss" scoped>
+@import '../common/variables';                                                                                                  

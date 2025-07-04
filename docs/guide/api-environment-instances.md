@@ -208,3 +208,14 @@ export class EnvironmentModuleGraph {
   getModuleByEtag(etag: string): EnvironmentModuleNode | undefined
 }
 ```
+## `ServerEnvironment` class
+
+```ts
+import { Environment } from 'vite'
+
+export class ServerEnvironment extends Environment {
+  constructor() {
+    super('server')
+  }
+} 
+```                   

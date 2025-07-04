@@ -133,3 +133,9 @@ export const sassOtherTests = () => {
     expect(await getColor('.sass-dep')).toBe('lavender')
   })
 }
+export const sassTests = () => {
+  sassTest()
+  sassModuleTests()
+  sassOtherTests()
+  sassModuleTests(true)
+}     

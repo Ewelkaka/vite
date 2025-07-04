@@ -513,3 +513,10 @@ const { startAnimation } = useCardAnimation(
   }
 }
 </style>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  alert('Gra uruchomiona!')
+})             
+
+

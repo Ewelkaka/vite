@@ -25,3 +25,5 @@ We don't recommend switching to these APIs yet. They are included in Vite to hel
 The changes below has been done or reverted. They are no longer relevant in the current major version.
 
 - _No past changes yet_
+# Vite Changes                                                          
+        

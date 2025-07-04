@@ -6,3 +6,9 @@
   publish = "docs/.vitepress/dist"
   command = "pnpm ci-docs"
   ignore = "./scripts/docs-check.sh"
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@vitejs/plugin-vue", "@vueuse/core", "vue", "vue-router", "vue-i18n", "vitepress", "vite-plugin-v                                                                                   ue", "vite-plugin-vue2", "vite-plugin-vue3", "vite-plugin-vue4", "vite-plugin-vue5"]
+[dev]           
+  command = "pnpm dev"
+  # No game installation configuration found. Please specify the game or relevant settings.                                                                                                                                                                                                                                                                                                                                                   

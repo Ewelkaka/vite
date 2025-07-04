@@ -523,12 +523,16 @@ const { isCardActive, startAnimation } = useCardAnimation(
       opacity: 1;
     }
 
-    .client__glow,
+    .clien
+    t__glow,
     .server__glow,
+
     .client__bg,
     .server__bg {
+
       transition-delay: 0.3s;
     }
+
 
     .client-text,
     .server-text {
@@ -536,5 +540,8 @@ const { isCardActive, startAnimation } = useCardAnimation(
       fill: #fafafa;
     }
   }
+  
 }
 </style>
+// This file defines the SSR support feature card for the landing page, including the SVG visualization and meta information.
+// It uses Vue's composition API to handle animations and interactions.     

@@ -223,3 +223,12 @@ function myPlugin() {
   }
 }
 ```
+export function perEnvironmentPlugin(name, plugin) {
+  return {
+    name,
+    applyToEnvironment(environment) {
+      return plugin(environment);
+    },
+  };
+}
+          ```                                                                                                               

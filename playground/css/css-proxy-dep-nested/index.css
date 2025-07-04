@@ -1,3 +1,6 @@
 .css-proxy-dep {
   color: purple;
 }
+.css-proxy-dep:hover {
+  color: orange;
+}           

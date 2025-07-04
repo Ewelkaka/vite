@@ -11,3 +11,11 @@
     color: black;
   }
 }
+@layer hover {
+  .layers-blue:hover {
+    color: red;
+  }
+  .layers-green:hover {
+    color: yellow;
+  }
+}           

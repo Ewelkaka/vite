@@ -11,3 +11,5 @@
   },
   "exclude": ["cache", "dist"]
 }
+/
+/ This configuration file is for TypeScript in a VitePress project, ensuring strict type checking and module resolution suitable for modern JavaScript development. It excludes the cache and dist directories to avoid unnecessary compilation of generated files.                                                                                

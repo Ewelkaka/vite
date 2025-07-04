@@ -20,3 +20,4 @@ html.dark .svg-image-root {
   font-family: var(--vp-font-family-base);
 }
 </style>
+

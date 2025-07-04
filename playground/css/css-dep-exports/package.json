@@ -10,3 +10,6 @@
     }
   }
 }
+// Compare this snippet from playground/css/css-dep-exports/style.css:
+// .css-dep-exports {
+    //   color: green;    

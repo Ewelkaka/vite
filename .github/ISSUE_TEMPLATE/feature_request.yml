@@ -46,3 +46,5 @@ body:
           required: true
         - label: Check that there isn't already an issue that request the same feature to avoid creating a duplicate.
           required: true
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+          required: true                          

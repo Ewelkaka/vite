@@ -9,4 +9,16 @@
     "build": "vite build",
     "preview": "vite preview"
   }
-}
+}     
+// This package is used to test Vite's CSP features.
+// It contains a simple Vite project with various CSP-related configurations and files.
+// The project includes scripts for development, building, and previewing the application.
+// The `debug` script allows for debugging the Vite server.
+// The project is set up to use ES modules, and it includes a version number of "0.0.0".
+// The `private` field is set to true, indicating that this package is not meant to be published to the npm registry.
+// The `name` field specifies the package name as "@vitejs/test-csp", indicating that it is a test package for Vite's CSP features.
+// The `type` field is set to "module", indicating that the project uses ES module syntax.
+// The `scripts` section defines several commands:
+// - `debug`: Starts the Vite server in debug mode with Node.js inspection enabled.
+// - `dev`: Starts the Vite development server.
+// - `build`: Builds the project for production using Vite.       

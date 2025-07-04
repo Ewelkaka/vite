@@ -839,3 +839,5 @@ onMounted(() => {
   }
 }
 </style>
+<style lang="scss" scoped>
+@import '../common/variab les';                                                                                                                                                                                                                                                                                 
