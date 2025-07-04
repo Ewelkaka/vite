@@ -1,3 +1,9 @@
 body {
   background: white;
 }
+body.dark {
+  background: #0f151a;
+}
+body.dark .VPNavBar,
+body.dark .VPNavBar:not(.top) {
+        background: transparent !important;                   
