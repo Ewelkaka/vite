@@ -6,5 +6,5 @@
   "dependencies": {
     "@vitejs/test-scss-proxy-dep-nested": "file:../scss-proxy-dep-nested"
   }
-}     
-        
+}   
+    
